@@ -1189,7 +1189,7 @@ if (!function_exists('order_id')) {
 
         $CI = & get_instance();
         $CI->load->database();
-        $orderId = $CI->db->select('MAX(id) as id')->get('orders')->row('id');
+        $orderId = $CI->db->select('MAX(id) as id')->get('series_number')->row('id');
 
         if (!empty($orderId)) {
             $orderId = $orderId+1;
@@ -1198,8 +1198,7 @@ if (!function_exists('order_id')) {
         }
 
         // $newId = 'BTLDTC'.date('Y') . str_pad($orderId, 4, '0', STR_PAD_LEFT);
-        $newId = 'BTLDTC2021'. str_pad($orderId, 4, '0', STR_PAD_LEFT);
-
+        $newId = 'BTLDTC2022'. str_pad($orderId, 4, '0', STR_PAD_LEFT);
         return $newId;
     }
 }
@@ -1208,7 +1207,7 @@ function invoice_number() {
 
     $CI = & get_instance();
     $CI->load->database();
-    $orderId = $CI->db->select('MAX(id) as id')->get('orders')->row('id');
+    $orderId = $CI->db->select('MAX(id) as id')->get('series_number')->row('id');
 
     if (!empty($orderId)) {
         $orderId = $orderId+1;
@@ -1220,8 +1219,7 @@ function invoice_number() {
 
     //MOVE/2021/W001
     //$newId = 'MOVE/'.date('Y').'/W'. str_pad($orderId, 3, '0', STR_PAD_LEFT);
-    $newId = 'MOVE/2021'.'/W'. str_pad($orderId, 3, '0', STR_PAD_LEFT);
-
+    $newId = 'MOVE/2022'.'/W'. str_pad($orderId, 3, '0', STR_PAD_LEFT);    
     return $newId;
 }
 

@@ -94,6 +94,9 @@ class Checkout extends CI_Controller {
 
     $saveOrderStatus = $this->checkout_model->saveOrder($orderData,$orderData['custom_orderid']);
 
+    //update series number
+    $this->db->insert('series_number', array('series_number' => $orderData['custom_orderid']));
+
     $items = array(
         'transaction_id' => $_POST['razorpay_order_id'],
         'affiliation' => 'Online Store',
