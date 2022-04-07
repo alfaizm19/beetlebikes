@@ -1,0 +1,246 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2021-02-22 02:43:08 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 02:43:16 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 02:44:21 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 02:45:25 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 02:45:25 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 02:45:25 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 02:46:05 --> Severity: Notice --> Undefined property: stdClass::$pinterest_link /opt/lampp/htdocs/vinita-michel/application/views/admin/vwEditSiteSetting.php 433
+ERROR - 2021-02-22 02:46:05 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 02:46:42 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 02:46:42 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 02:47:13 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 02:47:13 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 02:47:45 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:19:46 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:19:51 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:19:51 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:21:43 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:21:43 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:22:19 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:22:19 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:25:05 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:25:59 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:25:59 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:27:23 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:27:23 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:33:44 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:33:45 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:33:45 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:34:55 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:34:56 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:34:56 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:35:24 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:35:24 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:35:24 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:36:00 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:36:01 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:36:01 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:37:24 --> 404 Page Not Found: Product/product_detail
+ERROR - 2021-02-22 04:42:20 --> 404 Page Not Found: Product/product_detail
+ERROR - 2021-02-22 04:42:24 --> 404 Page Not Found: Product/product_detail
+ERROR - 2021-02-22 04:43:30 --> 404 Page Not Found: Product/product_detail
+ERROR - 2021-02-22 04:46:56 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:47:24 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:47:25 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:47:39 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:47:58 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:47:58 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 04:56:20 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:56:20 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 04:56:52 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:56:52 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:56:52 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 04:58:06 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 04:58:06 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 04:59:53 --> 404 Page Not Found: Assets/admin
+ERROR - 2021-02-22 05:00:53 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:00:53 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:00:57 --> 404 Page Not Found: Assets/admin
+ERROR - 2021-02-22 05:02:15 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:02:16 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:03:59 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:04:21 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:04:25 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:04:29 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:05:13 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:05:15 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:05:17 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:05:52 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:06:07 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:06:16 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:06:17 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:06:28 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:07:01 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:07:12 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:07:19 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:07:47 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:08:12 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:08:15 --> Severity: Notice --> Undefined index: banner_image /opt/lampp/htdocs/vinita-michel/application/libraries/Image_upload.php 113
+ERROR - 2021-02-22 05:08:16 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:08:33 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:08:40 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:08:40 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:08:42 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:08:44 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:08:48 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:10:22 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:10:25 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:10:38 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:15:03 --> 404 Page Not Found: Product/product_detail
+ERROR - 2021-02-22 05:16:44 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:16:44 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:17:13 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:17:13 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:18:24 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:18:24 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:18:24 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:18:44 --> 404 Page Not Found: Assets/admin
+ERROR - 2021-02-22 05:19:13 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:19:13 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:19:33 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:19:33 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:40:03 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:40:04 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:40:04 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:40:21 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:40:22 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:40:22 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:40:26 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:40:26 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:40:26 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:40:37 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:40:37 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:40:53 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:40:53 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:41:39 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:41:39 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:41:44 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:41:44 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:42:15 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:42:15 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:42:26 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:42:26 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:42:57 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:42:57 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 05:43:23 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:43:27 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:44:30 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:44:36 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:45:16 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:45:48 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:46:06 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:46:54 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:47:31 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:48:26 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:51:57 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:52:02 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:52:15 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:52:47 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:55:30 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:55:35 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:55:53 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:55:53 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:56:09 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:56:15 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 05:56:17 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:01:15 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:01:26 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:01:34 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:01:47 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:01:51 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:02:00 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:02:00 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 06:02:30 --> 404 Page Not Found: Assets/admin
+ERROR - 2021-02-22 06:03:20 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:03:36 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:03:36 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:04:12 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:04:16 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:04:20 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:04:49 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:07:41 --> Severity: Notice --> Undefined property: stdClass::$title /opt/lampp/htdocs/vinita-michel/application/controllers/Home.php 26
+ERROR - 2021-02-22 06:07:41 --> Severity: Notice --> Undefined property: stdClass::$meta_title /opt/lampp/htdocs/vinita-michel/application/controllers/Home.php 27
+ERROR - 2021-02-22 06:07:41 --> Severity: Notice --> Undefined property: stdClass::$meta_keyword /opt/lampp/htdocs/vinita-michel/application/controllers/Home.php 28
+ERROR - 2021-02-22 06:07:41 --> Severity: Notice --> Undefined property: stdClass::$meta_description /opt/lampp/htdocs/vinita-michel/application/controllers/Home.php 29
+ERROR - 2021-02-22 06:09:59 --> Severity: error --> Exception: Call to undefined function get_page() /opt/lampp/htdocs/vinita-michel/application/controllers/Home.php 25
+ERROR - 2021-02-22 06:15:20 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:15:20 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:15:20 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:16:34 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 06:16:34 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:16:34 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:16:34 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:16:41 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 06:17:11 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:17:14 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:17:19 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:17:19 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 06:17:29 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:17:34 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:17:34 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 06:17:40 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 06:20:59 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:21:00 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 06:21:08 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 06:21:32 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:21:35 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:21:48 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:21:48 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 06:23:10 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:23:13 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:23:21 --> 404 Page Not Found: Uploads/page
+ERROR - 2021-02-22 06:23:31 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:23:31 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:23:31 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:24:15 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:24:15 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:24:15 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:25:17 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:25:58 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:25:58 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:26:09 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:26:09 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:26:11 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:26:12 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:26:12 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:26:16 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:26:16 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:26:32 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:26:33 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:26:36 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:26:36 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:26:40 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:26:40 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:26:40 --> 404 Page Not Found: Assets/frontend
+ERROR - 2021-02-22 06:27:04 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:27:05 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:29:16 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:29:19 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:29:24 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:30:41 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:30:45 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:31:32 --> 404 Page Not Found: Product/product_detail
+ERROR - 2021-02-22 06:31:36 --> 404 Page Not Found: Product/product_detail
+ERROR - 2021-02-22 06:33:38 --> Severity: error --> Exception: Call to undefined function get_theme_file_uri() /opt/lampp/htdocs/vinita-michel/application/views/vwDesignerProfile.php 10
+ERROR - 2021-02-22 06:41:31 --> 404 Page Not Found: Product/product_detail
+ERROR - 2021-02-22 06:41:58 --> Severity: Notice --> Undefined variable: data /opt/lampp/htdocs/vinita-michel/application/views/vwTermOfUse.php 10
+ERROR - 2021-02-22 06:41:58 --> Severity: Notice --> Trying to get property 'banner_image_path' of non-object /opt/lampp/htdocs/vinita-michel/application/views/vwTermOfUse.php 10
+ERROR - 2021-02-22 06:41:58 --> Severity: Notice --> Undefined variable: data /opt/lampp/htdocs/vinita-michel/application/views/vwTermOfUse.php 15
+ERROR - 2021-02-22 06:41:58 --> Severity: Notice --> Trying to get property 'title' of non-object /opt/lampp/htdocs/vinita-michel/application/views/vwTermOfUse.php 15
+ERROR - 2021-02-22 06:41:58 --> Severity: Notice --> Undefined variable: data /opt/lampp/htdocs/vinita-michel/application/views/vwTermOfUse.php 17
+ERROR - 2021-02-22 06:41:58 --> Severity: Notice --> Trying to get property 'description' of non-object /opt/lampp/htdocs/vinita-michel/application/views/vwTermOfUse.php 17
+ERROR - 2021-02-22 06:42:29 --> Severity: Notice --> Undefined variable: data /opt/lampp/htdocs/vinita-michel/application/views/vwTermOfUse.php 10
+ERROR - 2021-02-22 06:42:29 --> Severity: Notice --> Trying to get property 'description' of non-object /opt/lampp/htdocs/vinita-michel/application/views/vwTermOfUse.php 10
+ERROR - 2021-02-22 06:42:53 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:43:00 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:43:20 --> 404 Page Not Found: Uploads/profile
+ERROR - 2021-02-22 06:48:25 --> Severity: Notice --> Trying to get property 'title' of non-object /opt/lampp/htdocs/vinita-michel/application/controllers/Home.php 264
+ERROR - 2021-02-22 06:48:25 --> Severity: Notice --> Trying to get property 'meta_title' of non-object /opt/lampp/htdocs/vinita-michel/application/controllers/Home.php 265
+ERROR - 2021-02-22 06:48:25 --> Severity: Notice --> Trying to get property 'meta_keyword' of non-object /opt/lampp/htdocs/vinita-michel/application/controllers/Home.php 266
+ERROR - 2021-02-22 06:48:25 --> Severity: Notice --> Trying to get property 'meta_description' of non-object /opt/lampp/htdocs/vinita-michel/application/controllers/Home.php 267
+ERROR - 2021-02-22 06:48:25 --> Severity: Notice --> Trying to get property 'description' of non-object /opt/lampp/htdocs/vinita-michel/application/views/vwShippingPolicy.php 10
+ERROR - 2021-02-22 06:52:06 --> 404 Page Not Found: Product/product_detail
+ERROR - 2021-02-22 06:52:09 --> 404 Page Not Found: Product/product_detail
+ERROR - 2021-02-22 08:15:38 --> 404 Page Not Found: Uploads/profile

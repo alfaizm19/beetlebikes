@@ -1,0 +1,200 @@
+<div class="col-sm-12">
+    <? echo display_flash('error'); ?>
+</div>
+<div class="m-subheader ">
+    <div class="d-flex align-items-center">
+        <div class="mr-auto">
+            <h3 class="m-subheader__title">
+                <? echo $page_title ?> </h3>
+        </div>
+        <a href="<? echo base_url('admin/product') ?>" class="btn btn-success m-btn m-btn--icon">
+            <span>
+                <i class="fa fa-arrow-circle-o-left"></i>
+                <span></span>Back
+            </span>
+        </a>
+    </div>
+</div>
+
+<div class="col-sm-12">
+    <div class="m-portlet m-portlet--primary m-portlet--head-solid-bg m-portlet--head-sm" data-portlet="true" id="m_portlet_tools_2">
+        <? // echo display_flash('error'); ?>
+        <!--begin::Form-->
+        <form class="m-form m-form--fit m-form--label-align-right" action="<? echo current_url(); ?>" method="post" enctype="multipart/form-data" name="certification_form" id="certification_form" novalidate="novalidate">
+            <div class="m-portlet__body pb-2">
+
+                <div class="box-header with-border">
+                    <div id="delete_allmsg_div"></div>
+                    <div class="FieldsMarked"> Fields Marked with (<span class="text-danger">*</span>) are Mandatory </div>
+                </div>
+
+            <div class="form-group m-form__group row">
+                <label class="col-form-label col-lg-3 col-sm-12" for="brand_id"> Brand<span class="text-danger">*</span>
+                </label>
+                <div class="col-lg-4 col-md-9 col-sm-12">
+                  <select name="brand_id" class="form-control m-select m_select_select " id="brand_id" data-placeholder="Select class" required data-msg-required="Please select class." data-allow-clear="true"onChange="category(this.value);" >
+                  <option value="">Select Brand</option>
+                  <? foreach ($brand as $key => $brand_value) : ?>
+                    <option  value="<?=$key?>" <? echo set_select('brand_id',$key); ?>><?=$brand_value?></option>
+                  <? endforeach; ?>
+                  </select> 
+                  <div class="has-error"></div>
+                </div>
+         </div>
+
+            <div id="select_category"></div>
+
+            <div class="form-group m-form__group row">
+                <label class="col-form-label col-lg-3 col-sm-12" for="name">Name<span class="text-danger">*</span> </label>
+                <div class="col-lg-4 col-md-9 col-sm-12">
+                    <input type="text" class="form-control input-lg m-input" value="<? echo get_input('name'); ?>" name="name" id="name" required data-msg-required="Please enter name.">
+                </div>
+            </div>
+
+             <div class="form-group m-form__group row">
+                    <label class="col-form-label col-lg-3 col-sm-12" for="image"> Image<span class="text-danger">*</span>  <? echo PRODUCT_SIZE; ?> </label> 
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                      <div class="cropoutterwrap">
+                        <input type="file" required class="form-control validImage" name="image" id="image" data-image-crop="1" data-image-height="<? echo PRODUCT_SIZE_HEIGHT;?>" data-image-width="<? echo PRODUCT_SIZE_WIDTH; ?>" data-caption="Image" data-image-path ="product/" required data-msg-required="Please upload image.">
+                      </div>
+                    </div>
+              </div>
+
+              <div class="form-group m-form__group row">
+                    <label class="col-form-label col-lg-3 col-sm-12" for="description"> Description<span class="text-danger">*</span></label>
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <textarea name="description" id="description" required data-msg-ckrequired="Please enter description." class="form-control ckerequired description input-lg m-input" rows="4"><? echo get_input('description'); ?></textarea>
+                        <div class="has-error"></div>
+                    </div>
+                </div>
+                
+                <div class="form-group m-form__group row">
+                    <label class="col-form-label col-lg-3 col-sm-12" for="keyword"> Product Keyword<span class="text-danger">*</span></label>
+                    <div class="col-lg-4 col-md-9 col-sm-12">
+                        <textarea name="keyword" id="keyword" class="form-control input-lg m-input" rows="3" required=""><? echo get_input('keyword'); ?></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group m-form__group row">
+                    <label class="col-form-label col-lg-3 col-sm-12" for="is_new_product">Is New Product</label>
+                    <div class="col-lg-4 col-md-9 col-sm-12 banner_button">
+                        <input id="is_new_product" type="checkbox" class="package_features__checkbox" name="is_new_product" onclick="date_field_display(this)"  />
+                    </div>
+                </div>
+
+                <div class="form-group  m-form__group row date_field">
+                    <label class="col-form-label col-lg-3 col-sm-12" for="start_date">
+                        Start Date<span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-4 col-md-9 col-sm-12">
+                        <div class="input-group date start_date w-50">
+                            <input type="text" id="start_date" name="start_date" value="<? echo get_input('start_date'); ?>" class="form-control m_datepicker start_date m-input small-textbox" required data-msg-required="Please enter start date."  data-format="dd-mm-yyyy" data-orientation="bottom left" data-autoclose="true" readonly="">
+                            <span class="input-group-addon"><i class="fa fa-calendar py-2 mt-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group  m-form__group row date_field">
+                    <label class="col-form-label col-lg-3 col-sm-12" for="end_date">
+                        End Date<span class="text-danger">*</span>
+                    </label>
+                    <div class="col-lg-4 col-md-9 col-sm-12">
+                        <div class="input-group date end_date w-50" >
+                            <input type="text"  id="end_date" name="end_date" value="<? echo get_input('end_date'); ?>" class="form-control m_datepicker end_date m-input small-textbox"  data-msg-required="Please enter end date."  data-format="dd-mm-yyyy" data-orientation="bottom left" data-autoclose="true" readonly="" required>
+                            <span class="input-group-addon"><i class="fa fa-calendar py-2 mt-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-2">
+                <div class="m-portlet__foot m-portlet__foot--fit py-2 border-0">
+                    <div class="m-form__actions m-form__actions py-0 ">
+                        <div class="row">
+                            <div class="col-lg-9 ml-lg-auto">
+                                <button type="submit" name="Submit" id="Submit" value="Save" class="btn btn-success"><i class="fa fa-save"></i> Save</button>
+                                <a class="btn btn-secondary" href="<? echo base_url('admin/product'); ?>"><i class="fa fa-times"></i> Cancel </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+        <!--end::Form-->
+    </div>
+</div>
+
+<script type="text/javascript">
+    function category(brand_id)
+    {
+        var id = brand_id;
+        if (id > 0)
+        {
+            var dataString = 'id=' + id;
+            $.ajax
+                    ({
+                        type: "POST",
+                        url: base_url + "admin/product/brandwise_category",
+                        data: dataString,
+                        cache: false,
+                        success: function (html)
+                        {   
+                            //alert(html);
+                            $("#select_category").html(html);
+                        }
+                    });
+        } else
+        {
+            $("#select_category").html('');
+        }
+
+    }
+</script>
+
+<script type="text/javascript">
+    $(".date_field").hide();
+    function date_field_display(thisEle)
+    {
+        if (thisEle.checked == true)
+            $(".date_field").show();
+        else 
+            $(".date_field").hide();
+    }
+
+    $(function () {
+        var dateFormat = "yyyy-mm-dd",
+                from = $(".start_date")
+                .datepicker({
+                    format: "yyyy-mm-dd",
+                    todayHighlight: true,
+                    pickerPosition: 'bottom-right',
+                    autoclose: true
+                })
+                .on("change", function (e) {
+                    to.datepicker("option", "minDate", getDate(this));
+                }),
+                to = $(".end_date").datepicker({
+            format: "yyyy-mm-dd",
+            todayHighlight: true,
+            pickerPosition: 'bottom-right',
+            autoclose: true
+        })
+                .on("change", function (e) {
+                    from.datepicker("option", "maxDate", getDate(this));
+                });
+        function getDate(element) {
+            var start_date = $("#start_date").val();
+            var end_date = $("#end_date").val();
+            var flag = false;
+            if (start_date <= end_date) {
+                flag = true;
+            } else if (start_date >= end_date) {
+                flag = false;
+                return  $("#end_date").val('');
+            }
+//                    return element.value;
+        }
+    });
+
+</script>

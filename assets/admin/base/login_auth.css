@@ -1,0 +1,16 @@
+.alert.m-alert--icon .m-alert__text {
+      padding: 0.00rem 0.00rem !important; 
+    }
+	.form-control-feedback {
+    display: none !important;
+}
+.btn-focus {
+    color: #fff;
+    background-color: #66625e;
+    border-color: #66625e;
+}
+.btn-focus:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}

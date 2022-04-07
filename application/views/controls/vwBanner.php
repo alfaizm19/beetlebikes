@@ -1,0 +1,1 @@
+        <figure> <img src="<?= base_url().$category_banner; ?>" alt=""/> </figure>

@@ -1,0 +1,15 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2021-09-27 10:12:45 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Home' does not have a method 'notFound' /home/zepe8eh0sem5/public_html/staging/drcycle/system/core/CodeIgniter.php 532
+ERROR - 2021-09-27 10:15:20 --> Severity: Notice --> Undefined variable: get_home_feature /home/zepe8eh0sem5/public_html/staging/drcycle/application/views/front/home.php 79
+ERROR - 2021-09-27 10:15:20 --> Severity: Notice --> Undefined variable: get_home_products /home/zepe8eh0sem5/public_html/staging/drcycle/application/views/front/home.php 124
+ERROR - 2021-09-27 10:15:20 --> Severity: Notice --> Undefined variable: get_home_accessories /home/zepe8eh0sem5/public_html/staging/drcycle/application/views/front/home.php 194
+ERROR - 2021-09-27 10:48:35 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Home' does not have a method 'notFound' /home/zepe8eh0sem5/public_html/staging/drcycle/system/core/CodeIgniter.php 532
+ERROR - 2021-09-27 10:50:00 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Home' does not have a method 'notFound' /home/zepe8eh0sem5/public_html/staging/drcycle/system/core/CodeIgniter.php 532
+ERROR - 2021-09-27 10:54:59 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Home' does not have a method 'notFound' /home/zepe8eh0sem5/public_html/staging/drcycle/system/core/CodeIgniter.php 532
+ERROR - 2021-09-27 10:55:00 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Home' does not have a method 'notFound' /home/zepe8eh0sem5/public_html/staging/drcycle/system/core/CodeIgniter.php 532
+ERROR - 2021-09-27 10:58:45 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Home' does not have a method 'notFound' /home/zepe8eh0sem5/public_html/staging/drcycle/system/core/CodeIgniter.php 532
+ERROR - 2021-09-27 11:05:49 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Home' does not have a method 'notFound' /home/zepe8eh0sem5/public_html/staging/drcycle/system/core/CodeIgniter.php 532
+ERROR - 2021-09-27 17:19:30 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Home' does not have a method 'notFound' /home/zepe8eh0sem5/public_html/staging/drcycle/system/core/CodeIgniter.php 532
+ERROR - 2021-09-27 17:19:47 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Home' does not have a method 'notFound' /home/zepe8eh0sem5/public_html/staging/drcycle/system/core/CodeIgniter.php 532
+ERROR - 2021-09-27 17:19:49 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Home' does not have a method 'notFound' /home/zepe8eh0sem5/public_html/staging/drcycle/system/core/CodeIgniter.php 532

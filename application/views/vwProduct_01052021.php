@@ -1,0 +1,331 @@
+<section class="section page-content">
+<div class="container">
+  <div>
+    <ol class="breadcrumb">
+      <li><a class="icon icon-sm fa-home text-primary" href="<?php echo base_url() ?>"></a></li>
+      <?php if (isset($breadcrumb) && !empty($breadcrumb)): ?>
+        <?php echo $breadcrumb; ?>
+      <?php endif ?>
+      <li class="active">
+        <?php echo $prod->product_name ?>
+      </li>
+    </ol>
+  </div>
+</div>
+</section>
+<section class="section">
+<div class="container section-60 mt-3 pt-3">
+  <div class="row product-details row-30">
+    <div class="col-lg-6">
+      <div class="row">
+        <?php if (!empty($images)): ?>
+          <div class="col-xl-2 col-md-2 col-lg-3">
+            <div class="slider-nav verticle-product-slider">
+
+              <div><img alt="" src="<?php echo base_url($prod->image_path) ?>" width="88" height="88"></div>
+
+              <?php 
+                foreach ($images as $img): ?>
+                  
+                  <?php if ($img->type == 'image'): ?>
+                    <div><img alt="" src="<?php echo base_url($img->image_path) ?>" width="88" height="88"></div>
+                  <?php else: ?>
+                    <div><img alt="" src="<? echo HTTP_ASSETS_PATH_CLIENT; ?>images/video-play.png" width="88" height="88"></div>
+                  <?php endif ?>
+
+              <?php endforeach ?>
+            </div>
+          </div>
+        <?php endif ?>
+        <div class="col-xl-10 col-lg-9 col-md-8 offset-top-20 offset-sm-top-0">
+          <div class="slider-for" data-lightgallery="group">
+            <div>
+              <!-- Magnific Popup-->
+              <div class="thumbnail-variant-2">
+                <img class="img-responsive drift-demo-trigger" data-zoom="<?php echo base_url($prod->image_path) ?>" src="<?php echo base_url($prod->image_path) ?>" width="470" height="632" alt="">
+                <?php if (!empty($prod->product_tag)): ?>
+                  <div class="caption">
+                    <a class="label label-primary" href="<?php echo base_url($prod->slug) ?>">
+                      <?php echo $prod->product_tag ?>
+                    </a>
+                </div>
+                <?php endif ?>
+
+                <div class="caption-variant-1">
+                  <a class="icon icon-base icon-circle fl-line-icon-set-magnification3" href="<?php echo base_url($prod->image_path) ?>" data-lightgallery="item">
+                    <img class="img-responsive" src="<?php echo base_url($prod->image_path) ?>" width="470" height="632" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <?php 
+              if (!empty($images)):
+                foreach($images as $gallery):
+            ?>
+
+              <?php if ($gallery->type == 'image'): ?>
+
+                <div>
+                  <!-- Magnific Popup-->
+                  <div class="thumbnail-variant-2"><img class="img-responsive drift-demo-trigger" data-zoom="<?php echo base_url($gallery->image_path) ?>" src="<?php echo base_url($gallery->image_path) ?>" width="470" height="632" alt="<?php echo base_url($gallery->image_alt) ?>">
+                    <div class="caption"><a class="label label-primary" href="<?php echo base_url() ?>"><?php echo $prod->product_tag; ?></a></div>
+                    <div class="caption-variant-1">
+                      <a class="icon icon-base icon-circle fl-line-icon-set-magnification3" data-lightgallery="item" href="<?php echo base_url($gallery->image_path) ?>"><img class="img-responsive" src="<?php echo base_url($gallery->image_path) ?>" width="470" height="632" alt="<?php echo base_url($gallery->image_alt) ?>"></a>
+                    </div>
+                  </div>
+                </div>
+
+              <?php else: ?>
+
+                <div>
+                  <div class="thumbnail-variant-2" style="width:100%;">
+                    <iframe width="100%" height="480" src="<?php echo $gallery->video_url ?>">
+                    </iframe>
+                  </div>
+                </div>
+
+              <?php endif ?>
+              
+            <?php endforeach; 
+            endif; ?>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 text-md-left details">
+      <h3 class="product-details-heading text-thin">
+        <?php echo $prod->product_name ?>
+      </h3>
+      <div class="offset-top-4 d-md-flex justify-content-md-between">
+        <div class="product-details-price">
+          <?php 
+            $mrp = $prod->mrp;
+            $sp = $prod->selling_price;
+            if (!empty($sp) && $sp > 0) {
+              if ($sp <= $mrp) {
+                echo '<span class="product-details-price-big">₹'.check_num($sp).'</span>';
+                echo ' <span class="product-details-price-small text-strike text-muted">₹'.check_num($mrp).'</span>';
+              }
+            } else {
+              echo '<span class="product-details-price-big">₹'.check_num($mrp).'</span>';
+            }
+          ?>
+        </div>
+        <div class="justify-content-center d-flex offset-top-20 offset-sm-top-30">
+          <div class="product-details-rating"><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star text-gray-light"></span></div>
+          <div><a class="decorated tab-change-link" href="#" data-custom-scroll-to="comments">(1 customer review)</a></div>
+        </div>
+      </div>
+      <hr class="divider divider-iron divider-dotted divider-offset-20">
+      <p class="offset-top-30 font-italic">
+        SKU: <?php echo $prod->sku_code ?>
+
+        <a class="prefix-sm-30 link" href="#">
+          <span class="icon icon-sm mdi mdi-heart-outline"></span>Add to Wishlist
+        </a>
+
+        <a class="prefix-sm-30 link" href="#">
+          <span class="icon icon-sm mdi mdi-signal"></span>Add to Compare
+        </a>
+      </p>
+
+      <hr class="divider divider-iron divider-dotted divider-offset-sm">
+      <div class="clearfix d-flex d-lg-block justify-content-between">
+        <?php 
+          $cartStock = get_cart_stock($prod->id);
+          $currentStock = $prod->stock;
+          $displayQty = 1;
+
+          if ( !empty($cartStock) && ($cartStock <= $currentStock) ) {
+            $displayQty = $cartStock;
+          } else if(!empty($currentStock)) {
+            $displayQty = 1;
+          }
+
+          if ($prod->stock):
+        ?>
+        <div class="pull-xs-left">
+            <input class="stepper form-input form-input-impressed qty_<?php echo $prodID ?>" type="number" data-zeros="true" value="<?php echo $displayQty ?>" min="1" max="<?php echo $prod->stock ?>">
+        </div>
+        <?php endif ?>
+        <div class="pull-xs-left">
+          <?php 
+            if ($prod->stock):
+          ?>
+            <button id="btn_<?php echo $prodID; ?>" onclick="addToCart('<?php echo $prodID ?>')" class="prefix-sm-30 btn btn-primary btn-icon btn-icon-left btn-w-180" type="button"><span class="icon icon fl-line-icon-set-grocery10"></span> Add to cart</button>
+
+            <button id="buy_now_btn_<?php echo $prodID; ?>" onclick="buyNow('<?php echo $prodID ?>')" class="prefix-sm-30 btn btn-primary btn-icon btn-icon-left btn-w-180" type="button"><span class="icon icon fl-line-icon-set-shopping63"></span> Buy Now</button>
+
+          <?php else: ?>
+            <button class="btn btn-primary btn-icon btn-icon-left" type="button">Out of stock</button>
+          <?php endif ?>
+        </div>
+      </div>
+      
+      <span id="msg_<?php echo $prodID; ?>"></span>
+
+      <hr class="divider divider-iron divider-dotted divider-offset-sm">
+      <div class="clearfix d-flex d-lg-block justify-content-between">
+        <div class="input-group mb-3 pincodePanel">
+          <input min="1" minlength="6" maxlength="6" type="number" class="form-control" placeholder="Enter Pincode" name="pincode" id="pincode" aria-label="Pincode" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button id="checkPincode" class="btn btn-primary" type="button">Check</button>
+          </div>
+        </div>
+        <span id="pincodeStatus"></span>
+      </div>
+    </div>
+    <!-- Responsive-tabs-->
+    <div class="col-12" id="comments">
+      <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
+        <!--Nav tabs-->
+        <ul class="nav nav-tabs">
+          <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-toggle="tab">Description</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-toggle="tab" data-review="true">Reviews (1)</a></li>
+        </ul>
+        <!--Tab panes-->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tabs-1-1">
+            <div class="text-left">
+              <h4>Description</h4>
+              <p class="offset-top-20">
+                <?php echo $prod->description ?>
+              </p>
+              <h4 class="offset-top-45">Details</h4>
+              <ul class="offset-top-20 list-marked">
+                <li>
+                  Dimension: <?php echo $prod->dimension ?>
+                </li>
+                <li>
+                  Net Weight (gm): <?php echo $prod->net_weight ?>
+                </li>
+                <li>
+                  Deno (gm): <?php echo $prod->deno ?>
+                </li>
+                <?php 
+                  if (!empty($prod->category_level_1)):
+                    $cat = $this->Master_model->category_by_id($prod->category_level_1);
+                ?>
+                  <li>Categories: <a href='<?php echo base_url('category/'.$cat->slug) ?>'><?php echo $cat->category  ?></a>
+                  </li>
+                <?php endif ?>
+
+                <?php if (!empty($prod->meta_key_words)): ?>
+                  <li>Tag: 
+                    <?php echo $prod->meta_key_words; ?>
+                  </li>
+                <?php endif ?>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tabs-1-2">
+            <h4 class="text-left">1 review for Agrafe earrings</h4>
+            <div class="offset-top-20">
+              <div class="tab-review">
+                <div class="tab-review-media"><img alt="" src="<? echo HTTP_ASSETS_PATH_CLIENT; ?>images/product-06.jpg" width="97" height="97"></div>
+                <div class="tab-review-body offset-top-10">
+                  <p>Posted by <a href='blog-list.html'>Shane Doe</a>  &#8226;  <a href='#'>25 Comments</a></p>
+                  <p>&#34;Thanks a lot for the quick response. I was really impressed, your solution is excellent!! Your competence is justified!!!&#34;</p>
+                  <div class="product-details-rating"><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star text-gray-light"></span></div>
+                </div>
+              </div>
+              <h4 class="offset-top-45">Add a Review</h4>
+              <div class="row offset-top-0">
+                <div class="col-lg-6">
+                  <form data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                    <div class="offset-top-20 d-flex align-items-center">
+                      <div class="font-italic">
+                        <p>Your Rating:</p>
+                      </div>
+                      <div class="inset-left-10">
+                        <fieldset class="rating">
+                          <input id="star5" type="radio" name="rating" value="5">
+                          <label class="full" for="star5" title="Awesome - 5 stars"></label>
+                          <input id="star4" type="radio" name="rating" value="4">
+                          <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                          <input id="star3" type="radio" name="rating" value="3">
+                          <label class="full" for="star3" title="Meh - 3 stars"></label>
+                          <input id="star2" type="radio" name="rating" value="2">
+                          <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                          <input id="star1" type="radio" name="rating" value="1">
+                          <label class="full" for="star1" title="Bad - 1 star"></label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="form-wrap offset-top-20">
+                      <label class="form-label-outside text-light font-italic" for="name">Your Name: <span class='text-primary'>*</span></label>
+                      <input class="form-input" id="name" type="text" name="name" data-constraints="@Required">
+                    </div>
+                    <div class="form-wrap">
+                      <label class="form-label-outside text-light font-italic" for="email">Your E-mail: <span class=text-primary>*</span></label>
+                      <input class="form-input" id="email" type="email" name="name" data-constraints="@Email @Required">
+                    </div>
+                    <div class="form-wrap offset-bottom-0">
+                      <label class="form-label-outside text-light font-italic" for="message">Your Review: <span class='text-primary'>*</span></label>
+                      <textarea class="form-input" id="message" name="message" data-constraints="@Required"></textarea>
+                    </div>
+                    <div class="form-wrap">
+                      <button class="btn btn-primary offset-top-30" type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php if(!empty($similar)): ?>
+    <div class="col-12">
+      <h3 class="offset-top-20">Related Products</h3>
+      <hr class="divider divider-bold divider-base">
+      <!-- Owl Carousel-->
+      <div class="owl-carousel offset-top-30" data-lg-items="4" data-md-items="3" data-sm-items="2" data-margin="30" data-nav="true">
+        <?php foreach ($similar as $simProd): ?>          
+          <div class="product d-inline-block">
+            <div class="product-media">
+              <a href="<?php echo base_url('products/'.$simProd->slug) ?>">
+                <img class="img-responsive" alt="" src="<?php echo base_url($simProd->image_path) ?>" width="290" height="389">
+              </a>
+              <div class="product-overlay">
+                <a class="icon icon-circle icon-base fl-line-icon-set-shopping63" href="<?php echo base_url('products/'.$simProd->slug) ?>"></a>
+              </div>
+              <?php if (!empty($simProd->product_tag)): ?>
+                <div class="product-overlay-variant-2">
+                  <a class="label label-default" href="<?php echo base_url('products/'.$simProd->slug) ?>">
+                    <?php echo $simProd->product_tag; ?>
+                  </a>
+                </div>
+              <?php endif ?>
+            </div>
+            <div class="offset-top-20">
+              <p class="big"><a class="text-base" href="<?php echo base_url('products/'.$simProd->slug) ?>"><?php echo $simProd->product_name; ?></a></p>
+            </div>
+            <?php 
+              $mrp = $simProd->mrp;
+              $sp  = $simProd->selling_price;
+
+              if (!empty($sp) && $sp > 0) {
+                if ($sp <= $mrp) {
+                  echo '<div class="product-price font-weight-bold">₹ '.check_num($sp).'</div>';
+                  echo ' <span class="font-default text-light text-muted text-strike small">₹ '.check_num($mrp).'</span>';
+                }
+              } else {
+                echo '<div class="product-price font-weight-bold">₹ '.check_num($mrp).'</div>';
+              }
+            ?>
+            <div class="product-actions elements-group-10">
+              <a class="icon mdi mdi-heart-outline icon-gray icon-sm" href="<?php echo base_url('products/'.$simProd->slug) ?>"></a>
+              <a class="icon mdi mdi-signal icon-gray icon-sm" href="<?php echo base_url('products/'.$simProd->slug) ?>"></a>
+            </div>
+          </div>
+        <?php endforeach ?>
+      </div>
+    </div>
+    <?php endif; ?>
+
+  </div>
+</div>
+</section>

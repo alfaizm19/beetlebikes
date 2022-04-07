@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------------------
+
+    Template Name: DotBike
+    Template URI: http://dotthemes.com/demo/dotbike-preview/
+    Author: Dot_themes
+    Author URI: http://dotthemes.com/
+    Version: 1.0
+	Description: DotBike is a modern design HTML5/CSS3 template for bicycles, bikes, 
+	mountain biking, motorcycles, accessories, spare parts online stores, bicycle store, shop, 
+	repair center and any type of eCommerce site.
+
+Note: This asset style file includes all external plugins css file.
+
+-------------------------------------------------------------------------------*/
+@import url("font-awesome.min.css");
+@import url("animate.css");
+@import url("jquery.mb.YTPlayer.min.css");
+@import url("owl.carousel.css");
+@import url("jquery-ui.css");
+@import url(owl.theme.css);
+@import url("owl.transitions.css");
+@import url("meanmenu.min.css");
