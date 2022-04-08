@@ -12,7 +12,7 @@
 <div class="col-sm-12">
     <div class="m-portlet m-portlet--primary m-portlet--head-solid-bg m-portlet--head-sm" data-portlet="true" id="m_portlet_tools_2">
         <div class="m-portlet__body">
-            <div class="m_datatable m-datatable m-datatable--default m-datatable--loaded">
+            <div class="m_datatable m-datatable m-datatable--default m-datatable--loaded overflow_x">
                 <table id="gridTable" class="table table-striped m-table ">
                     <thead>
                         <tr class="p-0 ">

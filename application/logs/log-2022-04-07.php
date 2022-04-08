@@ -52,3 +52,92 @@ ERROR - 2022-04-07 12:46:18 --> 404 Page Not Found: Uploads/product
 ERROR - 2022-04-07 12:46:19 --> 404 Page Not Found: Uploads/product
 ERROR - 2022-04-07 12:46:23 --> 404 Page Not Found: Uploads/product
 ERROR - 2022-04-07 12:49:34 --> 404 Page Not Found: Uploads/product
+ERROR - 2022-04-07 16:05:20 --> Could not find the specified $config['composer_autoload'] path: vendor/autoload.php
+ERROR - 2022-04-07 16:05:26 --> Could not find the specified $config['composer_autoload'] path: vendor/autoload.php
+ERROR - 2022-04-07 16:05:26 --> 404 Page Not Found: Uploads/product
+ERROR - 2022-04-07 16:05:26 --> Could not find the specified $config['composer_autoload'] path: vendor/autoload.php
+ERROR - 2022-04-07 16:05:27 --> Query error: Unknown column 'prod.id' in 'field list' - Invalid query: SELECT `prod`.`id`, `prod`.`product_name`, `prod`.`slug`, `prod`.`sku_code`, `prod`.`selling_price`, `prod`.`image_path`, `prod`.`mrp`, `cart`.`id` as `cart_id`, `cart`.`quantity` as `cart_qty`, `prod`.`category_level_1`, `prod`.`category_level_2`, `prod`.`id`, `prod`.`product_name`, `prod`.`slug`, `prod`.`sku_code`, `prod`.`selling_price`, `prod`.`image_path`, `prod`.`mrp`, `wish`.`id` as `wish_id`, `product_name`, `slug`, `mrp`, `selling_price`, `id`, `image_path`, `sku_code`
+FROM `cart` as `cart`, `wishlist` as `wish`, `product`
+WHERE DATE(available_date) <= '2022-04-07'
+AND `is_active` = 1
+AND `category_level_1` = 8
+AND SHA2(id, 256) IN('4ec9599fc203d176a301536c2e091a19bc852759b255bd6818810a42c5fed14a', 'b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9', '6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918')
+ORDER BY `id` DESC
+ LIMIT 3
+ERROR - 2022-04-07 16:10:25 --> 404 Page Not Found: Uploads/product
+ERROR - 2022-04-07 16:10:25 --> Query error: Unknown column 'prod.id' in 'field list' - Invalid query: SELECT `prod`.`id`, `prod`.`product_name`, `prod`.`slug`, `prod`.`sku_code`, `prod`.`selling_price`, `prod`.`image_path`, `prod`.`mrp`, `cart`.`id` as `cart_id`, `cart`.`quantity` as `cart_qty`, `prod`.`category_level_1`, `prod`.`category_level_2`, `prod`.`id`, `prod`.`product_name`, `prod`.`slug`, `prod`.`sku_code`, `prod`.`selling_price`, `prod`.`image_path`, `prod`.`mrp`, `wish`.`id` as `wish_id`, `product_name`, `slug`, `mrp`, `selling_price`, `id`, `image_path`, `sku_code`
+FROM `cart` as `cart`, `wishlist` as `wish`, `product`
+WHERE DATE(available_date) <= '2022-04-07'
+AND `is_active` = 1
+AND `category_level_1` = 8
+AND SHA2(id, 256) IN('4ec9599fc203d176a301536c2e091a19bc852759b255bd6818810a42c5fed14a', 'b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9', '6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918')
+ORDER BY `id` DESC
+ LIMIT 3
+ERROR - 2022-04-07 16:10:30 --> Query error: Unknown column 'prod.id' in 'field list' - Invalid query: SELECT `prod`.`id`, `prod`.`product_name`, `prod`.`slug`, `prod`.`sku_code`, `prod`.`selling_price`, `prod`.`image_path`, `prod`.`mrp`, `cart`.`id` as `cart_id`, `cart`.`quantity` as `cart_qty`, `prod`.`category_level_1`, `prod`.`category_level_2`, `prod`.`id`, `prod`.`product_name`, `prod`.`slug`, `prod`.`sku_code`, `prod`.`selling_price`, `prod`.`image_path`, `prod`.`mrp`, `wish`.`id` as `wish_id`, `product_name`, `slug`, `mrp`, `selling_price`, `id`, `image_path`, `sku_code`
+FROM `cart` as `cart`, `wishlist` as `wish`, `product`
+WHERE DATE(available_date) <= '2022-04-07'
+AND `is_active` = 1
+AND `category_level_1` = 8
+AND SHA2(id, 256) IN('4ec9599fc203d176a301536c2e091a19bc852759b255bd6818810a42c5fed14a', 'b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9', '6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918')
+ORDER BY `id` DESC
+ LIMIT 3
+ERROR - 2022-04-07 16:10:30 --> 404 Page Not Found: Uploads/product
+ERROR - 2022-04-07 16:13:06 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:13:06 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:13:24 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:13:29 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:13:30 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:13:40 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:13:41 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:13:41 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:15:51 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:15:51 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:15:52 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:15:52 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:17:30 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:17:31 --> 404 Page Not Found: admin/Product/requestProvider.js.map
+ERROR - 2022-04-07 16:17:32 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:17:32 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:17:55 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:17:55 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:17:56 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:17:56 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:18:48 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:18:49 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:18:49 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:18:49 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:20:06 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:20:06 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:20:07 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:20:07 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:20:07 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:20:21 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:20:21 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:20:22 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:20:22 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:20:26 --> Severity: Notice --> Undefined property: stdClass::$bm_name C:\xampp\htdocs\beetlebikes\application\views\admin\vwViewProduct.php 35
+ERROR - 2022-04-07 16:20:26 --> Severity: Notice --> Undefined property: stdClass::$popular C:\xampp\htdocs\beetlebikes\application\views\admin\vwViewProduct.php 95
+ERROR - 2022-04-07 16:20:26 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:20:27 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:20:27 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:20:47 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:20:47 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:20:48 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:20:48 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:21:02 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:21:02 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:21:03 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:21:03 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:21:03 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:21:32 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:21:32 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:21:33 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:21:33 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:22:55 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:22:56 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:22:56 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:22:56 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:22:58 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 16:22:59 --> 404 Page Not Found: admin/RequestProviderjsmap/index
+ERROR - 2022-04-07 16:22:59 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 16:22:59 --> 404 Page Not Found: Assets/frontend
