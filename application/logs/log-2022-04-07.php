@@ -52,3 +52,20 @@ ERROR - 2022-04-07 12:46:18 --> 404 Page Not Found: Uploads/product
 ERROR - 2022-04-07 12:46:19 --> 404 Page Not Found: Uploads/product
 ERROR - 2022-04-07 12:46:23 --> 404 Page Not Found: Uploads/product
 ERROR - 2022-04-07 12:49:34 --> 404 Page Not Found: Uploads/product
+ERROR - 2022-04-07 15:42:52 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:43:22 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:46:12 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:47:08 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:47:09 --> 404 Page Not Found: Assets/admin
+ERROR - 2022-04-07 15:47:59 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:48:15 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:48:43 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:48:53 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:49:15 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:50:40 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:50:44 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:50:48 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:50:50 --> Severity: Notice --> Undefined property: stdClass::$bm_name /opt/lampp/htdocs/beetlebikes/application/views/admin/vwViewProduct.php 35
+ERROR - 2022-04-07 15:50:50 --> Severity: Notice --> Undefined property: stdClass::$popular /opt/lampp/htdocs/beetlebikes/application/views/admin/vwViewProduct.php 95
+ERROR - 2022-04-07 15:50:50 --> 404 Page Not Found: Assets/frontend
+ERROR - 2022-04-07 15:51:10 --> 404 Page Not Found: Assets/frontend
