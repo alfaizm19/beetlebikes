@@ -454,3 +454,23 @@ $("#usage").change(function(event) {
     }
 
 });
+
+// hamburgr
+  $('#ham').on('click', function() {
+    console.log('click')
+    if($(this).attr('stat')=="open"){
+      $('#ham1').css("transform","rotateZ(40deg)");
+      $('#ham2').css("transform","scale(0)");
+      $('#ham3').css("transform","rotateZ(-43deg)");
+      
+      $(this).attr("stat","close");
+      $('.m-aside-left').css('left','0px');
+    }
+    else{
+      $('#ham1').css("transform","rotateZ(0deg)");
+      $('#ham2').css("transform","scale(-1)");
+      $('#ham3').css("transform","rotateZ(0deg)");
+      $(this).attr("stat","open");
+      $('.m-aside-left').css('left','-350px');
+    }
+  });  

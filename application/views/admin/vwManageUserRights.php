@@ -13,7 +13,7 @@
             <form class="m-form" action="<?php echo base_url('admin/update_display_order/') ?>" method="post" enctype="multipart/form-data" name="display_order" id="display_order" novalidate="novalidate">
             <?php endif; ?>
             <div class="m-portlet__body">
-                <div class="m_datatable m-datatable m-datatable--default m-datatable--loaded">
+                <div class="m_datatable m-datatable m-datatable--default m-datatable--loaded overflow_x">
                     <table id="gridTable" class="table table-striped m-table">
                         <thead>
                             <tr class="p-0 ">
