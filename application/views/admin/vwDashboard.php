@@ -181,20 +181,16 @@
                                                     <tr>
                                                         <td><strong>Ecom</strong></td>
                                                         <td>
-                                                            <!-- <?php echo $ecomMTD = !empty($mtdSales['Sale'])? number_format(round($mtdSales['Sale'],2)):0; ?> -->
-                                                            <?php echo $ecomMTD = !empty($mtdSales2['Sale'])? number_format(round($mtdSales2['Sale'],2)):0; ?>
+                                                            <?php echo $ecomMTD = !empty($mtdSales['Sale'])? number_format(round($mtdSales['Sale'],2)):0; ?>              
                                                         </td>
                                                         <td>
-                                                            <!-- <?php echo $ecomLMTD = !empty($lmtdSales['Sale'])? number_format(round($lmtdSales['Sale'],2)):0; ?> -->
-                                                            <?php echo $ecomLMTD = !empty($lmtdSales2['Sale'])? number_format(round($lmtdSales2['Sale'],2)):0; ?>                           
+                                                            <?php echo $ecomLMTD = !empty($lmtdSales['Sale'])? number_format(round($lmtdSales['Sale'],2)):0; ?>
                                                         </td>
                                                         <td>
-                                                            <!-- <?php echo $ecomLM = !empty($lmSales['Sale'])? number_format(round($lmSales['Sale'],2)):0; ?> -->
-                                                            <?php echo $ecomLM = !empty($lmSales2['Sale'])? number_format(round($lmSales2['Sale'],2)):0; ?>
+                                                            <?php echo $ecomLM = !empty($lmSales['Sale'])? number_format(round($lmSales['Sale'],2)):0; ?>
                                                         </td>
                                                         <td>
-                                                            <!-- <?php echo $ecomYTD = !empty($ytdSales['Sale'])? number_format(round($ytdSales['Sale'],2)):0; ?> -->
-                                                            <?php echo $ecomYTD = !empty($ytdSales2['Sale'])? number_format(round($ytdSales2['Sale'],2)):0; ?>
+                                                            <?php echo $ecomYTD = !empty($ytdSales['Sale'])? number_format(round($ytdSales['Sale'],2)):0; ?>
                                                         </td>
                                                     </tr>
                                                     <tr>

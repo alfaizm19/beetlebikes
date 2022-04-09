@@ -155,7 +155,7 @@ class Auth extends Auth_Controller {
             'password' => $otpData['password']
         );
 
-        $expireTime = $otpData['expire'];
+        $expireTime = $otpData['expire'];        
 
         if (!empty($otpData)) {
         
