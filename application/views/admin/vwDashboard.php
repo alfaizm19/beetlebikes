@@ -74,12 +74,18 @@
                                     LEFT JOIN product ON order_item.product_id = product.id
                                     WHERE date(orders.created_at) >= "'.$startingDate.'" AND date(orders.created_at) <= "'.$lastDate.'" ')->result_array()[0];
 
+                                $mtdSales2 = $this->db->query('SELECT count(*) AS "Qty" FROM orders
+                                    WHERE date(orders.created_at) >= "'.$startingDate.'" AND date(orders.created_at) <= "'.$lastDate.'" ')->result_array()[0];
+
                                 // $lmtdSales = $this->db->query('SELECT SUM(tbl_order_products.variant_price * tbl_order_products.product_quantity) AS "Sale", count(*) AS "Qty" FROM `tbl_order_master` LEFT JOIN `tbl_customer_detail` ON `tbl_order_master`.`user_id` = `tbl_customer_detail`.`customer_id` LEFT JOIN `tbl_shipping_method` ON `tbl_order_master`.`payment_method_id` = `tbl_shipping_method`.`shipping_id` LEFT JOIN `tbl_coupon` ON `tbl_order_master`.`user_id` = `tbl_coupon`.`coupon_id` LEFT JOIN `tbl_order_products` ON `tbl_order_master`.`order_id` = `tbl_order_products`.`order_id` LEFT JOIN `tbl_product_master` ON `tbl_product_master`.`product_id` = `tbl_order_products`.`product_id` LEFT JOIN `tbl_order_status_master` ON `tbl_order_status_master`.`status_id` = `tbl_order_products`.`order_status` WHERE date(tbl_order_master.created_at) >= "'.$lastMonthDate.'" AND date(tbl_order_master.created_at) <= "'.$lastMonthDateEnd.'"')->result_array()[0];
 
                                 $lmtdSales = $this->db->query('SELECT SUM(order_item.price * order_item.quantity) AS "Sale", count(*) AS "Qty" FROM orders
                                     LEFT JOIN user ON orders.user_id = user.id
                                     LEFT JOIN order_item ON orders.id = order_item.order_id
                                     LEFT JOIN product ON order_item.product_id = product.id
+                                    WHERE date(orders.created_at) >= "'.$lastMonthDate.'" AND date(orders.created_at) <= "'.$lastMonthDateEnd.'" ')->result_array()[0];
+
+                                $lmtdSales2 = $this->db->query('SELECT count(*) AS "Qty" FROM orders
                                     WHERE date(orders.created_at) >= "'.$lastMonthDate.'" AND date(orders.created_at) <= "'.$lastMonthDateEnd.'" ')->result_array()[0];
 
                                 // $lmSales = $this->db->query('SELECT SUM(tbl_order_products.variant_price * tbl_order_products.product_quantity) AS "Sale", count(*) AS "Qty" FROM `tbl_order_master` LEFT JOIN `tbl_customer_detail` ON `tbl_order_master`.`user_id` = `tbl_customer_detail`.`customer_id` LEFT JOIN `tbl_shipping_method` ON `tbl_order_master`.`payment_method_id` = `tbl_shipping_method`.`shipping_id` LEFT JOIN `tbl_coupon` ON `tbl_order_master`.`user_id` = `tbl_coupon`.`coupon_id` LEFT JOIN `tbl_order_products` ON `tbl_order_master`.`order_id` = `tbl_order_products`.`order_id` LEFT JOIN `tbl_product_master` ON `tbl_product_master`.`product_id` = `tbl_order_products`.`product_id` LEFT JOIN `tbl_order_status_master` ON `tbl_order_status_master`.`status_id` = `tbl_order_products`.`order_status` WHERE date(tbl_order_master.created_at) >= "'.$lastMonthDate.'" AND date(tbl_order_master.created_at) <= "'.$lastMonthDateEnd2.'"')->result_array()[0];
@@ -90,12 +96,18 @@
                                     LEFT JOIN product ON order_item.product_id = product.id
                                     WHERE date(orders.created_at) >= "'.$lastMonthDate.'" AND date(orders.created_at) <= "'.$lastMonthDateEnd2.'" ')->result_array()[0];
 
+                                $lmSales2 = $this->db->query('SELECT count(*) AS "Qty" FROM orders
+                                    WHERE date(orders.created_at) >= "'.$lastMonthDate.'" AND date(orders.created_at) <= "'.$lastMonthDateEnd2.'" ')->result_array()[0];
+
                                 // $ytdSales = $this->db->query('SELECT SUM(tbl_order_products.variant_price * tbl_order_products.product_quantity) AS "Sale", count(*) AS "Qty" FROM `tbl_order_master` LEFT JOIN `tbl_customer_detail` ON `tbl_order_master`.`user_id` = `tbl_customer_detail`.`customer_id` LEFT JOIN `tbl_shipping_method` ON `tbl_order_master`.`payment_method_id` = `tbl_shipping_method`.`shipping_id` LEFT JOIN `tbl_coupon` ON `tbl_order_master`.`user_id` = `tbl_coupon`.`coupon_id` LEFT JOIN `tbl_order_products` ON `tbl_order_master`.`order_id` = `tbl_order_products`.`order_id` LEFT JOIN `tbl_product_master` ON `tbl_product_master`.`product_id` = `tbl_order_products`.`product_id` LEFT JOIN `tbl_order_status_master` ON `tbl_order_status_master`.`status_id` = `tbl_order_products`.`order_status` WHERE date(tbl_order_master.created_at) >= "'.$startingMonth.'" AND date(tbl_order_master.created_at) <= "'.$lastDate.'"')->result_array()[0];
 
                                 $ytdSales = $this->db->query('SELECT SUM(order_item.price * order_item.quantity) AS "Sale", count(*) AS "Qty" FROM orders
                                     LEFT JOIN user ON orders.user_id = user.id
                                     LEFT JOIN order_item ON orders.id = order_item.order_id
                                     LEFT JOIN product ON order_item.product_id = product.id
+                                    WHERE date(orders.created_at) >= "'.$startingMonth.'" AND date(orders.created_at) <= "'.$lastDate.'" ')->result_array()[0];
+
+                                $ytdSales2 = $this->db->query('SELECT count(*) AS "Qty" FROM orders
                                     WHERE date(orders.created_at) >= "'.$startingMonth.'" AND date(orders.created_at) <= "'.$lastDate.'" ')->result_array()[0];
                                 
                             ?>
@@ -117,16 +129,20 @@
                                                     <tr>
                                                         <td><strong>Ecom</strong></td>
                                                         <td>
-                                                            <?php echo $ecomMTDQty = !empty($mtdSales['Qty'])? number_format(round($mtdSales['Qty'],2)):0; ?>
+                                                            <!-- <?php echo $ecomMTDQty = !empty($mtdSales['Qty'])? number_format(round($mtdSales['Qty'],2)):0; ?> -->
+                                                            <?php echo $ecomMTDQty = !empty($mtdSales2['Qty'])? number_format(round($mtdSales2['Qty'],2)):0; ?>
                                                         </td>
                                                         <td>
-                                                            <?php echo $ecomLMTDQty = !empty($lmtdSales['Qty'])? number_format(round($lmtdSales['Qty'],2)):0; ?>
+                                                            <!-- <?php echo $ecomLMTDQty = !empty($lmtdSales['Qty'])? number_format(round($lmtdSales['Qty'],2)):0; ?> -->
+                                                            <?php echo $ecomLMTDQty = !empty($lmtdSales2['Qty'])? number_format(round($lmtdSales2['Qty'],2)):0; ?>
                                                         </td>
                                                         <td>
-                                                            <?php echo $ecomLMQty = !empty($lmSales['Qty'])? number_format(round($lmSales['Qty'],2)):0; ?>
+                                                            <!-- <?php echo $ecomLMQty = !empty($lmSales['Qty'])? number_format(round($lmSales['Qty'],2)):0; ?> -->
+                                                            <?php echo $ecomLMQty = !empty($lmSales2['Qty'])? number_format(round($lmSales2['Qty'],2)):0; ?>
                                                         </td>
                                                         <td>
-                                                            <?php echo $ecomYTDQty = !empty($ytdSales['Qty'])? number_format(round($ytdSales['Qty'],2)):0; ?>
+                                                            <!-- <?php echo $ecomYTDQty = !empty($ytdSales['Qty'])? number_format(round($ytdSales['Qty'],2)):0; ?> -->
+                                                            <?php echo $ecomYTDQty = !empty($ytdSales2['Qty'])? number_format(round($ytdSales2['Qty'],2)):0; ?>
                                                         </td>
                                                     </tr>
                                                     
@@ -165,16 +181,20 @@
                                                     <tr>
                                                         <td><strong>Ecom</strong></td>
                                                         <td>
-                                                            <?php echo $ecomMTD = !empty($mtdSales['Sale'])? number_format(round($mtdSales['Sale'],2)):0; ?>
+                                                            <!-- <?php echo $ecomMTD = !empty($mtdSales['Sale'])? number_format(round($mtdSales['Sale'],2)):0; ?> -->
+                                                            <?php echo $ecomMTD = !empty($mtdSales2['Sale'])? number_format(round($mtdSales2['Sale'],2)):0; ?>
                                                         </td>
                                                         <td>
-                                                            <?php echo $ecomLMTD = !empty($lmtdSales['Sale'])? number_format(round($lmtdSales['Sale'],2)):0; ?>                                 
+                                                            <!-- <?php echo $ecomLMTD = !empty($lmtdSales['Sale'])? number_format(round($lmtdSales['Sale'],2)):0; ?> -->
+                                                            <?php echo $ecomLMTD = !empty($lmtdSales2['Sale'])? number_format(round($lmtdSales2['Sale'],2)):0; ?>                           
                                                         </td>
                                                         <td>
-                                                            <?php echo $ecomLM = !empty($lmSales['Sale'])? number_format(round($lmSales['Sale'],2)):0; ?>
+                                                            <!-- <?php echo $ecomLM = !empty($lmSales['Sale'])? number_format(round($lmSales['Sale'],2)):0; ?> -->
+                                                            <?php echo $ecomLM = !empty($lmSales2['Sale'])? number_format(round($lmSales2['Sale'],2)):0; ?>
                                                         </td>
                                                         <td>
-                                                            <?php echo $ecomYTD = !empty($ytdSales['Sale'])? number_format(round($ytdSales['Sale'],2)):0; ?>
+                                                            <!-- <?php echo $ecomYTD = !empty($ytdSales['Sale'])? number_format(round($ytdSales['Sale'],2)):0; ?> -->
+                                                            <?php echo $ecomYTD = !empty($ytdSales2['Sale'])? number_format(round($ytdSales2['Sale'],2)):0; ?>
                                                         </td>
                                                     </tr>
                                                     <tr>
